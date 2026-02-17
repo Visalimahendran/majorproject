@@ -20,8 +20,10 @@ bokeh>=3.4.0
 
 # ── Image & Vision ─────────────────────────────────────────────
 pillow>=10.2.0
-opencv-python>=4.9.0
-opencv-contrib-python>=4.9.0
+# FIX: opencv-python requires libGL.so.1 (OpenGL) which is NOT available
+# on Streamlit Cloud servers. Use headless variants — identical API, no GUI deps.
+opencv-python-headless>=4.9.0
+opencv-contrib-python-headless>=4.9.0
 scikit-image>=0.22.0
 
 # ── ML / Deep Learning ─────────────────────────────────────────
