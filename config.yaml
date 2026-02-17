@@ -1,0 +1,15 @@
+data_acquisition:
+  digital:
+    canvas_height: 600
+    canvas_width: 800
+  tablet:
+    product_id: 782
+    vendor_id: 1386
+  webcam:
+    device_id: 0
+    height: 720
+    width: 1280
+system:
+  debug: true
+  name: NeuroMotor Health System
+  version: 1.0.0
