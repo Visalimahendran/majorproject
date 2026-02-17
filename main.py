@@ -83,7 +83,7 @@ except ImportError:
 # ══════════════════════════════════════════════════════════════════════════════
 class MentalHealthWebApp:
     def __init__(self):
-        self.model_path = os.path.join("saved_models", "best_model.pth")
+        self.model_path = os.path.join("best_model.pth")
         self.inference = None
         self._init_session_state()
         self.load_model()
@@ -1195,4 +1195,5 @@ def main():
 
 
 if __name__ == "__main__":
+
     main()
